@@ -17,7 +17,7 @@ Links dort, wo sie waren.
 
 *Feilo* kommt vom deutschen *feilen*: etwas so lange bearbeiten, bis es glatt ist.
 
-![Feilo settings](docs/screenshots/general.png)
+![Feilo settings](docs/screenshots/general-de.png)
 
 ## Installation
 
@@ -77,7 +77,8 @@ Wähle in Einstellungen → Modell einen Anbieter:
 |---|---|
 | **Kostenlos (integriert)** | Keiner. 25 Umformulierungen pro Tag, je bis zu 2.000 Zeichen, mit einem offenen Modell (Mistral Small 3.1) auf Cloudflare Workers AI. |
 | OpenAI, Anthropic, Google Gemini, DeepSeek, Groq, OpenRouter, Mistral | Dein eigener API-Schlüssel. Gemini, Groq und OpenRouter haben eigene kostenlose Kontingente. |
-| Ollama | Keiner; läuft lokal, nichts verlässt deinen Mac. |
+| Ollama | Keiner; läuft lokal, nichts verlässt deinen Mac. Standard ist Qwen 3.5 (`ollama pull qwen3.5:9b`); die Einstellungen zeigen deine installierten Modelle. |
+| [Magpie](https://usemagpie.ai) | Keiner in Feilo. Nutzt alle Abos und Schlüssel, die du in Magpie hinzugefügt hast, über dessen lokales Gateway. |
 | Benutzerdefiniert | Jeder OpenAI-kompatible Endpunkt (LM Studio, ein Firmen-Proxy, …). |
 
 Der Modellname lässt sich bearbeiten, und mit **Verbindung testen** prüfst du
