@@ -57,8 +57,8 @@ Requires macOS 14 (Sonoma) or later, on Apple silicon or Intel.
 |---|---|
 | **Polish** | Select text, press **⌃⌥R**. A small "Polish…" bubble appears near the pointer; when it disappears the text has been replaced. Press the shortcut again to cancel. |
 | **Your own actions** | Settings → Actions: add instructions such as "more formal", "shorter" or "translate only", each with its own shortcut. They also appear in the menu bar menu. |
-| **Language** | Rewrite in **English** (default) or **German**. Text in any other language is translated as it is rewritten. |
-| **Level** | Keep the result at a CEFR level: A1, A2, B1, B2, **C1** (default), C2, or no limit. Feilo tells the model which vocabulary and sentence structures that level allows. |
+| **Language** | Rewrite in **English** (default) or **German**, translating text in any other language, or choose **Same as the text** to keep each text in its own language. |
+| **Level** | Keep the result at a CEFR level: A1, A2, B1, B2, **C1** (default), C2, or no limit. The level is an upper limit: Feilo tells the model which vocabulary and sentence structures it allows, and text that is already simpler stays as it is. Casual text stays casual, and du stays du. |
 | **Rich text** | Bold, italics, underline, links, fonts and colours stay on the right words, even when a sentence is reordered or translated. |
 
 Your clipboard is put back as it was after every rewrite. If you switch apps
