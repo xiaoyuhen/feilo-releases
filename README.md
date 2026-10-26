@@ -72,7 +72,8 @@ Choose a provider in Settings → Model:
 |---|---|
 | **Free (built-in)** | None. 25 rewrites a day, up to 2,000 characters each, on an open model (Mistral Small 3.1) hosted on Cloudflare Workers AI. |
 | OpenAI, Anthropic, Google Gemini, DeepSeek, Groq, OpenRouter, Mistral | Your API key. Gemini, Groq and OpenRouter have free tiers of their own. |
-| Ollama | None; runs locally, nothing leaves your Mac. |
+| Ollama | None; runs locally, nothing leaves your Mac. Defaults to Qwen 3.5 (`ollama pull qwen3.5:9b`); Settings lists the models you have installed. |
+| [Magpie](https://usemagpie.ai) | None in Feilo. Uses every subscription and key you added to Magpie, through its local gateway. |
 | Custom | Any OpenAI-compatible endpoint (LM Studio, a company proxy, …). |
 
 The model name is editable, and **Test Connection** checks the key and model
