@@ -61,8 +61,8 @@ Voraussetzung ist macOS 14 (Sonoma) oder neuer, auf Apple Silicon oder Intel.
 |---|---|
 | **Überarbeiten** | Markiere Text und drücke **⌃⌥R**. Neben dem Zeiger erscheint eine kleine „Überarbeiten …“-Blase; sobald sie verschwindet, ist der Text ersetzt. Drücke das Tastenkürzel noch einmal, um abzubrechen. |
 | **Eigene Aktionen** | Einstellungen → Aktionen: Füge Anweisungen wie „förmlicher“, „kürzer“ oder „nur übersetzen“ hinzu, jeweils mit eigenem Tastenkürzel. Sie erscheinen auch im Menü in der Menüleiste. |
-| **Sprache** | Formuliere auf **Englisch** (Standard) oder **Deutsch** um. Text in jeder anderen Sprache wird beim Umformulieren übersetzt. |
-| **Niveau** | Halte das Ergebnis auf einem CEFR-Niveau: A1, A2, B1, B2, **C1** (Standard), C2 oder ohne Begrenzung. Feilo teilt dem Modell mit, welchen Wortschatz und welche Satzstrukturen das Niveau erlaubt. |
+| **Sprache** | Formuliere auf **Englisch** (Standard) oder **Deutsch** um, wobei Text in anderen Sprachen übersetzt wird, oder wähle **Wie der Text**, damit jeder Text in seiner Sprache bleibt. |
+| **Niveau** | Halte das Ergebnis auf einem CEFR-Niveau: A1, A2, B1, B2, **C1** (Standard), C2 oder ohne Begrenzung. Das Niveau ist eine Obergrenze: Feilo teilt dem Modell mit, welchen Wortschatz und welche Satzstrukturen es erlaubt, und einfacherer Text bleibt, wie er ist. Lockerer Text bleibt locker, und du bleibt du. |
 | **Formatierter Text** | Fett, Kursiv, Unterstrichen, Links, Schriften und Farben bleiben an den richtigen Wörtern, auch wenn ein Satz umgestellt oder übersetzt wird. |
 
 Nach jedem Umformulieren wird deine Zwischenablage wieder so hergestellt, wie
