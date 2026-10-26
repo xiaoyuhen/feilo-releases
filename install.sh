@@ -4,7 +4,7 @@
 #   curl -fsSL https://raw.githubusercontent.com/xiaoyuhen/feilo-releases/main/install.sh | bash
 #
 # Downloads the latest release from github.com/xiaoyuhen/feilo-releases,
-# verifies its SHA-256 checksum and code signature, installs Feilo.app into
+# verifies its SHA-256 checksum and that Feilo's certificate signed it, installs Feilo.app into
 # /Applications (or ~/Applications when /Applications is not writable),
 # clears the quarantine flag (Feilo is not notarized), and opens it.
 set -euo pipefail
@@ -35,7 +35,12 @@ curl -fsSL -o "$work/$zip.sha256" "$base/$zip.sha256"
 
 ditto -x -k "$work/$zip" "$work/unpacked"
 app="$work/unpacked/Feilo.app"
-codesign --verify --deep --strict "$app" 2>/dev/null || die "the app's signature does not verify"
+# A valid signature alone proves nothing: anyone can sign an app. Feilo's own
+# certificate must have signed it, the same check the in-app updater makes.
+# scripts/release.sh refuses to publish a build that does not satisfy this.
+REQUIREMENT='identifier "io.github.xiaoyuhen.feilo" and certificate root = H"e6099c8a92e88f16d58fffb8ac31a2afeee881bb"'
+codesign --verify --deep --strict -R="$REQUIREMENT" "$app" 2>/dev/null \
+    || die "the app is not signed with Feilo's certificate; not installing"
 
 target="/Applications"
 [[ -w "$target" ]] || { target="$HOME/Applications"; mkdir -p "$target"; }
